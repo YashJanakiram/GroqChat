@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-light: #3b82f6;
+  --primary-dark: #60a5fa;
+}
+
+/* Modern transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 dark:bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-300 dark:bg-gray-600;
+}
+
+/* Button hover effects */
+button {
+  @apply transition-all duration-200;
+}
+
+button:not(:disabled):hover {
+  @apply transform scale-[1.02];
+}
+
+button:not(:disabled):active {
+  @apply transform scale-[0.98];
+}
+
+/* Input focus effects */
+input, textarea {
+  @apply transition-all duration-200;
+}
+
+input:focus, textarea:focus {
+  @apply ring-2 ring-blue-500/20 dark:ring-blue-500/10;
+}
+
+/* Glass morphism effects */
+.glass-light {
+  @apply bg-white/70 backdrop-blur-lg;
+}
+
+.glass-dark {
+  @apply bg-gray-800/70 backdrop-blur-lg;
+}
+
+/* Dark mode overrides */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Message animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-new {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+
+.text-primary-light {
+  color: var(--primary-light);
+}
+
+.text-primary-dark {
+  color: var(--primary-dark);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+/* Markdown Styles */
+.markdown {
+  @apply text-current;
+}
+
+.markdown pre {
+  @apply my-2 rounded-lg overflow-x-auto;
+}
+
+.markdown pre div {
+  @apply rounded-lg;
+}
+
+.markdown code {
+  @apply bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded;
+}
+
+.markdown pre code {
+  @apply bg-transparent p-0;
+}
+
+.markdown p {
+  @apply my-2;
+}
+
+.markdown ul {
+  @apply list-disc list-inside my-2;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside my-2;
+}
+
+.markdown li {
+  @apply my-1;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-600 pl-4 my-2 italic;
+}
+
+.markdown h1 {
+  @apply text-2xl font-bold my-4;
+}
+
+.markdown h2 {
+  @apply text-xl font-bold my-3;
+}
+
+.markdown h3 {
+  @apply text-lg font-bold my-2;
+}
