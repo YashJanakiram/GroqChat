@@ -5,11 +5,11 @@ A sleek, modern chat interface powered by Groq’s LLM API designed with **Chain
 ## what's new?
 #### Without Chain of Thought
 <img width="1080" height="489" alt="With Chain of Thought " src="https://github.com/user-attachments/assets/f2baffb0-aeff-4e92-8130-e0b1052eaff8" />
+<img width="1080" height="524" alt="Without Chain of Thought " src="https://github.com/user-attachments/assets/4527ba88-e2c2-462e-b2f9-71edb78b0a1c" />
 
 
 #### With Chain of Thought
-<img width="1080" height="524" alt="Without Chain of Thought " src="https://github.com/user-attachments/assets/4527ba88-e2c2-462e-b2f9-71edb78b0a1c" />
-
+<img width="1080" height="489" alt="With Chain of Thought " src="https://github.com/user-attachments/assets/f2baffb0-aeff-4e92-8130-e0b1052eaff8" />
 
 ## Features
 
